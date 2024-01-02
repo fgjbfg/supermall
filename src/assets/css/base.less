@@ -1,0 +1,125 @@
+@import './normalize.css';
+@import '../icons/style.css';
+
+// TIP 共用样式
+.text-more {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  touch-action: none;
+}
+
+li {
+  list-style: none;
+}
+
+// TabBar组件样式
+.tab-bar {
+  display: flex;
+  background-color: #f6f6f6;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  box-shadow: 0 -5px 1px rgba(100,100,100,0.08);
+}
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+}
+.tab-bar-item img {
+  width: 24px;
+  height: 24px;
+}
+
+//Goods start
+.goods-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.goods-list-item {
+  width: 48%;
+  height: 340px;
+  position: relative;
+}
+.goods-list-item img {
+  width: 180px;
+  border-radius: 10px;
+}
+.goods-list-item .info {
+  font-size: 20px;
+  position: absolute;
+  bottom: 5px;
+}
+.goods-list-item .info div {
+  display: flex;
+  justify-content: center;
+}
+.goods-list-item p {
+  width: 180px;
+  font-size: 15px;
+  padding: 10px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods-list-item span:nth-child(1) {
+  color: #fe647f;
+  margin-right: 5px;
+}
+.goods-list-item .star {
+  width: 23px;
+  vertical-align: middle;
+}
+//Goods end
+
+//backTop组件 start
+.back-top {
+  position: fixed;
+  right: 15px;
+  bottom: 75px;
+  height: 43px;
+  width: 43px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.back-top img {
+  height: 43px;
+  width: 43px;
+}
+//backTop组件 end
+
+//CheckButton start
+.check-button {
+  height: 25px;
+  width: 25px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+}
+.check-button img {
+  height: 23px;
+  width: 23px;
+}
+//CheckButton end
+
+
+
+// tip 项目通用样式常量
+@color-tint: #fe647f;
+@navbar-height: 50px;
+@color-text: #515151;
+@color-bg: #f2f2f2;
